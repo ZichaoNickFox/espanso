@@ -89,3 +89,5 @@ matches:
   - trigger: ":pass"
     replace: "'<span style=\"background:#F6C243\">$|$</span>"
   
+  - trigger: ":return"
+    replace: "'<span style=\"background:#000000\"><font color=white>$|$</font></span>"
