@@ -46,7 +46,7 @@ matches:
     replace: "'<font color=red><strong><em>$|$</em></strong></font>"
   
   - trigger: ":em"
-    replace: "'*$|$*"
+    replace: "'<em>$|$</em>"
   - trigger: ":em"
     replace: "'<font color=red><em>$|$</em></font>"
   - trigger: ":em"
@@ -55,7 +55,7 @@ matches:
   - trigger: ":under"
     replace: "'<u>$|$</u>"
 
-  - trigger: "del"
+  - trigger: ":del"
     replace: "'<del>$|$</del>"
 
   - trigger: ":bold"
