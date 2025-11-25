@@ -45,17 +45,22 @@ matches:
   - trigger: ":red"
     replace: "'<font color=red><strong><em>$|$</em></strong></font>"
   
-  - trigger: ":itali"
-    replace: "'<em>$|$</em>"
-  - trigger: ":itali"
+  - trigger: ":em"
+    replace: "'*$|$*"
+  - trigger: ":em"
     replace: "'<font color=red><em>$|$</em></font>"
-  - trigger: ":itali"
+  - trigger: ":em"
     replace: "'<font color=red><strong><em>$|$</em></strong></font>"
   
   - trigger: ":under"
     replace: "'<u>$|$</u>"
 
+  - trigger: "del"
+    replace: "'<del>$|$</del>"
+
   - trigger: ":bold"
+    replace: "'<strong>$|$</strong>"
+  - trigger: ":strong"
     replace: "'<strong>$|$</strong>"
   
   - trigger: ":log"
@@ -71,14 +76,16 @@ matches:
   - trigger: ":poly"
     replace: "'<span style=\"background:#fdbfff\"><font color=red>$|$</font></span>"
   
-  - trigger: ":anchor"
-    replace: "'<font color=\"#2F6EBB\"><strong><em><u>$|$</u></em></strong></font>"
+  - trigger: ":anchorb"
+    replace: "'<font color=\"#2F6EBB\"><strong><em><u>"
+  - trigger: ":anchore"
+    replace: "</u></em></strong></font>"
   
   - trigger: ":memory"
     replace: "'<span style=\"background:rgba(240, 200, 0, 0.2)\">$|$</span>"
   
   - trigger: ":param"
-    replace: "'<font color=\"#76923c\"><strong>$|$</strong></font>"
+    replace: "'<font color=\"#4FADEA\"><strong>$|$</strong></font>"
   
   - trigger: ":cvar"
     replace: "'<span style=\"background:#9254de\"><font color=white>$|$</font></span>"
@@ -87,7 +94,25 @@ matches:
     replace: "'<span style=\"background:#A3CBFA\">$|$</span>"
 
   - trigger: ":pass"
-    replace: "'<span style=\"background:#F6C243\">$|$</span>"
+    replace: "'<span style=\"background:#F6C243\"><em>$|$</em></span>"
   
   - trigger: ":return"
     replace: "'<span style=\"background:#000000\"><font color=white>$|$</font></span>"
+  
+  - trigger: ":question"
+    replace: "'<span style=\"background:red\"></span>"
+  
+  - trigger: ":proc1"
+    replace: "'<span style=\"background:#B02418; padding:5px\"><font color=white>$|$</font></span>"
+  - trigger: ":proc2"
+    replace: "'<span style=\"background:#67349A; padding:5px\"><font color=white>$|$</font></span>"
+  - trigger: ":proc3"
+    replace: "'<span style=\"background:#306EBA; padding:5px\"><font color=white>$|$</font></span>"
+  - trigger: ":proc4"
+    replace: "'<span style=\"background:#7A611D; padding:5px\"><font color=white>$|$</font></span>"
+  
+  - trigger: ":thread"
+    replace: "'<span style=\"background:#659D98\"><font color=white>$|$</font></span>"
+  
+  - trigger: ":rd"
+    replace: "'<span style=\"background:#75FB4C\"><font color=black>$|$</font></span>"
